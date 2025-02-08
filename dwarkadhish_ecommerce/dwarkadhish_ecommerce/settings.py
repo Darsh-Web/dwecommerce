@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-7n_7(cw4y54dzwwa!qaerw*6hu36u1#i@8@86c((--1+8!zr%p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["140.245.19.51","www.dwecommerce.in","dwecommerce.in"]
+ALLOWED_HOSTS = ["140.245.19.51","www.dwecommerce.in","dwecommerce.in", "127.0.0.1"]
 
 
 # Application definition
