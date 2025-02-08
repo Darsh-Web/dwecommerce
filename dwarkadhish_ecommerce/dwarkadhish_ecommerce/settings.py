@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-7n_7(cw4y54dzwwa!qaerw*6hu36u1#i@8@86c((--1+8!zr%p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["140.245.19.51","www.dwecommerce.in","dwecommerce.in"]
 
 
 # Application definition
@@ -81,7 +81,12 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+CSRF_TRUSTED_ORIGINS = [
+    "https://www.dwecommerce.in",
+    "https://dwecommerce.in",
+]
 
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -127,3 +132,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CSRF_COOKIE_DOMAIN = ".dwecommerce.in"
+
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
