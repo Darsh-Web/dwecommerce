@@ -1,0 +1,36 @@
+# Ignore Python compiled files
+__pycache__/
+*.py[cod]
+*.sqlite3
+
+# Ignore Django secrets
+.env
+*.log
+*.pot
+*.pyc
+*.pyo
+
+# Ignore Virtual Environment
+venv/
+ENV/
+*.venv
+
+# Ignore Database (if using SQLite)
+db.sqlite3
+
+# Ignore Static & Media Files (Optional)
+staticfiles/
+media/
+
+# Ignore VSCode, JetBrains, and other IDE files
+.vscode/
+.idea/
+*.swp
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore Nginx & Gunicorn logs
+*.log
+gunicorn.sock
