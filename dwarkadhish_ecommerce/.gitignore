@@ -1,0 +1,48 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+*.env
+*.venv
+Pipfile
+Pipfile.lock
+
+# Django stuff
+db.sqlite3
+media/
+staticfiles/
+# static/
+*.log
+*.pot
+*.pyc
+
+# VS Code settings
+.vscode/
+
+# JetBrains IDE (PyCharm)
+.idea/
+
+# Migrations (optional, can be generated again)
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Node.js (if using npm/yarn for frontend)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Docker
+*.docker
+docker-compose.override.yml
+
+# Environment files
+.env
+*.secret
+
+# Deployment
+*.pem
+*.key
